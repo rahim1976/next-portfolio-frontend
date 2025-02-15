@@ -24,7 +24,7 @@ export const ContactSection = () => {
             </div>
             <div>
               <a
-                href="https://wa.me/+923332659124"
+                href="https://wa.me/+923142915300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
