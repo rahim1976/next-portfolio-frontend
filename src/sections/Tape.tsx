@@ -2,17 +2,20 @@ import StarIcon from "@/assets/icons/star.svg";
 import { Fragment } from "react";
 
 const words = [
-  "Performant",
-  "Accessible",
-  "Secure",
-  "Interactive",
-  "Scalable",
-  "User Friendly",
-  "Responsive",
-  "Maintainable",
-  "Search Optimized",
-  "Usable",
-  "Reliable",
+  "High-Performance",
+  "Accessible Design",
+  "Robust Security",
+  "Engaging UI",
+  "Scalable Solutions",
+  "User-Centric",
+  "Fully Responsive",
+  "Reliable Systems",
+  "SEO Optimized",
+  "Intuitive UX",
+  "Reliable Systems",
+  "Pixel Perfect",
+  "Seamless Experience",
+  
 ];
 
 export const TapeSection = () => {
