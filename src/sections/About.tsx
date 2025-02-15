@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import bookImage from "@/assets/images/book-cover.png";
@@ -9,18 +9,24 @@ import CssIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
+import FigmaIcon from "@/assets/icons/figma-icon.svg";
+import NextIcon from "@/assets/icons/next-js-icon.svg";
+import Vscode from "@/assets/icons/vscode-icon.svg";
+import Python from "@/assets/icons/python.svg";
+import Bootstrap from "@/assets/icons/bootstrap.svg";
+import Tailwind from "@/assets/icons/tailwindcss.svg";
+import TypescriptIcon from "@/assets/icons/typescript-icon.svg";
+import Stack from "@/assets/icons/stack-overflow.svg";  
+import Medium from "@/assets/icons/medium.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/Toolboxitems";
+import { ToolboxItemstwo } from "@/components/ToolboxItemstwo";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-
+import Cursor from "@/assets/icons/cursor-icon.svg";
 const toolboxItems = [
-  {
-    title: "Javascript",
-    iconType: JavascriptIcon,
-  },
   {
     title: "HTML5",
     iconType: HTMLIcon,
@@ -30,8 +36,42 @@ const toolboxItems = [
     iconType: CssIcon,
   },
   {
+    title: "Tailwind CSS",
+    iconType: Tailwind,
+  },
+  {
+    title: "Bootstrap",
+    iconType: Bootstrap,
+  },
+  {
+    title: "Javascript",
+    iconType: JavascriptIcon,
+  },
+  {
+    title: "Typescript",
+    iconType: TypescriptIcon,
+  },
+  {
     title: "React",
     iconType: ReactIcon,
+  },
+  {
+    title: "NextJs",
+    iconType: NextIcon,
+  },
+  {
+    title: "Python",
+    iconType: Python,
+  },
+];
+const ToolboxItems2 = [
+  {
+    title: "VsCode",
+    iconType: Vscode,
+  },
+  {
+    title: "Cursor",
+    iconType: Cursor,
   },
   {
     title: "Chrome",
@@ -41,55 +81,71 @@ const toolboxItems = [
     title: "Github",
     iconType: GithubIcon,
   },
+  {
+    title: "Figma",
+    iconType: FigmaIcon,
+  },
+  {
+    title: "Medium",
+    iconType: Medium,
+  },
+  {
+    title: "Stack Overflow",
+    iconType: Stack,
+  },
 ];
-
 const hobbies = [
   {
-    title: "Painting",
-    emoji: "🎨",
-    left: "5%",
-    top: "5%",
-  },
-  {
-    title: "Photography",
-    emoji: "📷",
-    left: "50%",
-    top: "5%",
-  },
-  {
-    title: "Hiking",
-    emoji: "🗻",
-    left: "35%",
-    top: "40%",
-  },
-  {
-    title: "Gaming",
-    emoji: "🎮",
-    left: "10%",
-    top: "35%",
-  },
-  {
-    title: "Music",
-    emoji: "🎨",
-    left: "70%",
-    top: "45%",
-  },
-  {
-    title: "Fitness",
-    emoji: "💪",
-    left: "5%",
-    top: "65%",
+    title: "Writing",
+    emoji: "✍️",
+    left: "3%",
+    top: "-5%",
   },
   {
     title: "Reading",
     emoji: "📚",
-    left: "45%",
-    top: "75%",
+    left: "40%",
+    top: "-1%",
+  },
+  {
+    title: "Education",
+    emoji: "🎓",
+    left: "75%",
+    top: "-1%",
+  },
+  {
+    title: "Gaming",
+    emoji: "🎮",
+    left: "18%",
+    top: "30%",
+  },
+  {
+    title: "Photography",
+    emoji: "📸",
+    left: "60%",
+    top: "30%",
+  },
+  {
+    title: "E-Commerce",
+    emoji: "💻",
+    left: "5%",
+    top: "65%",
+  },
+  {
+    title: "Music",
+    emoji: "🎵",
+    left: "40%",
+    top: "65%",
+  },
+  {
+    title: "Movies",
+    emoji: "🎥",
+    left: "70%",
+    top: "65%",
   },
 ];
 export const AboutSection = () => {
-
-const constraintRef = useRef(null);
+  const constraintRef = useRef(null);
   return (
     <div className="py-20 lg:py-28 scroll-mt-24" id="about">
       <div className="container">
@@ -120,12 +176,12 @@ const constraintRef = useRef(null);
               <ToolboxItems
                 items={toolboxItems}
                 className=" "
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+                itemsWrapperClassName="animate-move-left [animation-duration:20s]"
               />
-              <ToolboxItems
-                items={toolboxItems}
+              <ToolboxItemstwo
+                items={ToolboxItems2}
                 className="mt-6 "
-                itemsWrapperClassName="animate-move-right [animation-duration:15s]"
+                itemsWrapperClassName="animate-move-right [animation-duration:10s]"
               />
             </Card>
           </div>
@@ -166,11 +222,9 @@ const constraintRef = useRef(null);
                 className="h-full w-full object-cover object-left-top"
               />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-            
-            
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
-            
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
+
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
                 <Image
                   src={smileMemoji}
                   alt="Smiling memoji"
