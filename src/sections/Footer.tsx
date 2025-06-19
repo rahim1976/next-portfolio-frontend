@@ -15,7 +15,7 @@ const footerLinks = [
   },
   {
     title: "LinkedIn",
-    href: "https://www.linkedin.com/in/rahim-ali-89b7b9279/",
+    href: "https://www.linkedin.com/in/rahimalii/",
   },
 ];
 
